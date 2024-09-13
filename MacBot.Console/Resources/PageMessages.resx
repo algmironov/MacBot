@@ -1,0 +1,203 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AboutPage" xml:space="preserve">
+    <value>Метафорические ассоциативные карты - это инструмент для самопознания и личностного развития. Работа с картами происходит в диалоге с психологом.
+Вы выбираете карты вслепую, а психолог по очереди отправляет вам выбранные карты. Ваша задача - рассказать, какие ассоциации, чувства и истории вызывает у вас каждая карта.
+Психолог будет задавать уточняющие вопросы, помогая вам глубже осмыслить значение карт для вашей жизни. Вместе мы будем искать новые инсайты и перспективы для решения ваших задач.
+Будьте готовы к открытому и честному диалогу. Только так вы сможете по-настоящему раскрыть себя и получить максимальную пользу от работы с картами.</value>
+  </data>
+  <data name="AddDeckPage" xml:space="preserve">
+    <value>Добавление новой колоды.
+1. Нажмите кнопку ниже
+2. В поле ввода появится заготовленный текст
+3. Допишите название колоды и отправьте сообщение.
+4. После этого пришлите карты новой колоды</value>
+  </data>
+  <data name="AllSessionsPage" xml:space="preserve">
+    <value>Нажмите на кнопку для просмотра информации о сессии или нажмите "Скачать в Excel" для экспорта истории сессий в файл.</value>
+  </data>
+  <data name="AwaitClientToChooseCardsPage" xml:space="preserve">
+    <value>Ожидаем, когда клиент выберет карты</value>
+  </data>
+  <data name="AwaitMasterToShowcardPage" xml:space="preserve">
+    <value>Сейчас будет показана карта</value>
+  </data>
+  <data name="CardChoiseAborted" xml:space="preserve">
+    <value>Выбор карты отменен.
+выберите другую карту.</value>
+  </data>
+  <data name="ChoiceFinished" xml:space="preserve">
+    <value>Карты выбраны. 
+Нажмите на кнопку "Завершить выбор"</value>
+  </data>
+  <data name="ChooseAnotherCard" xml:space="preserve">
+    <value>Выберите еще одну карту</value>
+  </data>
+  <data name="ChooseCard" xml:space="preserve">
+    <value>/chooseCard</value>
+  </data>
+  <data name="ChooseDeckPage" xml:space="preserve">
+    <value>Выберите колоду</value>
+  </data>
+  <data name="ChooseFirstCard" xml:space="preserve">
+    <value>Пожалуйста, выберите любую карту:</value>
+  </data>
+  <data name="ClientHasJoinedSessionPage" xml:space="preserve">
+    <value>Клиент присоединился к сессии. 
+Начинаем?</value>
+  </data>
+  <data name="ClientPage" xml:space="preserve">
+    <value>Введите код для начала сессии или выберите пункт меню:</value>
+  </data>
+  <data name="Deck" xml:space="preserve">
+    <value>/deck</value>
+  </data>
+  <data name="DecksViewPage" xml:space="preserve">
+    <value>Выберите, что хотите сделать:</value>
+  </data>
+  <data name="Duration" xml:space="preserve">
+    <value>/duration</value>
+  </data>
+  <data name="ExportHistoryPage" xml:space="preserve">
+    <value>Вся история ваших сессий в файле:</value>
+  </data>
+  <data name="FinalCardShownPage" xml:space="preserve">
+    <value>Последняя карта показана.
+Можно отправить случайную карту или завершить сессию.</value>
+  </data>
+  <data name="GeneratedLinkPage" xml:space="preserve">
+    <value> </value>
+  </data>
+  <data name="GetNewDeckCardsPage" xml:space="preserve">
+    <value>Пришлите карты новой колоды:</value>
+  </data>
+  <data name="MasterPage" xml:space="preserve">
+    <value>Выберите дальнейшее действие:</value>
+  </data>
+  <data name="MessageSentPage" xml:space="preserve">
+    <value>Ваше сообщение отправлено!
+Спасибо за обратную связь. </value>
+  </data>
+  <data name="NewSessionPage" xml:space="preserve">
+    <value>Создание новой сессии</value>
+  </data>
+  <data name="SelectCardsToShowPage" xml:space="preserve">
+    <value>Выберите номера карт.</value>
+  </data>
+  <data name="SelectionDone" xml:space="preserve">
+    <value>✅</value>
+  </data>
+  <data name="SendCardToShowPage" xml:space="preserve">
+    <value>Отправить карту?</value>
+  </data>
+  <data name="SendCodePage" xml:space="preserve">
+    <value>Если у Вас есть код для начала сессии, пожалуйста отправьте его ответом на это сообщение.
+Если у Вас нет кода, обратитесь к Вашему специалисту для проведения сессии.</value>
+  </data>
+  <data name="SendMessagePage" xml:space="preserve">
+    <value>Вы можете написать сообщение, нажав на кнопку "Открыть форму обратной связи":  появится окно, где можно ввести сообщение для владельца бота.
+</value>
+  </data>
+  <data name="SessionFromHistoryPage" xml:space="preserve">
+    <value />
+  </data>
+  <data name="SessionHistoryPage" xml:space="preserve">
+    <value>История Ваших сессий:</value>
+  </data>
+  <data name="SessionIsFinishedForClientPage" xml:space="preserve">
+    <value>Сессия завершена.</value>
+  </data>
+  <data name="SessionIsFinishedForMasterPage" xml:space="preserve">
+    <value>Сессия завершена.</value>
+  </data>
+  <data name="SessionsByClientPage" xml:space="preserve">
+    <value>Выберите клиента:</value>
+  </data>
+  <data name="SessionWillStartSoonPage" xml:space="preserve">
+    <value>Добро пожаловать!
+Вы прошли по ссылке для начала сессии.
+Психологу отправлено уведомление, сессия скоро начнется.</value>
+  </data>
+  <data name="SetCardsAmountToShowPage" xml:space="preserve">
+    <value>Выберите, сколько карт показать
+(Дополнительные карты можно будет отправить после установленного количества)</value>
+  </data>
+  <data name="SetSessionDurationPage" xml:space="preserve">
+    <value>Установите продолжительность сессии (мин.)</value>
+  </data>
+  <data name="ShowAllCardsFromDeckPage" xml:space="preserve">
+    <value>Все карты в колоде</value>
+  </data>
+  <data name="ShowCardForMasterPage" xml:space="preserve">
+    <value>Карта отправлена.
+Отправить еще?</value>
+  </data>
+  <data name="ViewDecksPage" xml:space="preserve">
+    <value>Доступные колоды:</value>
+  </data>
+  <data name="WaitForClientPage" xml:space="preserve">
+    <value>Ожидаем клиента</value>
+  </data>
+  <data name="WelcomePage" xml:space="preserve">
+    <value>Добро пожаловать в Мак-бот!
+Кто вы: психолог или клиент?</value>
+  </data>
+</root>
