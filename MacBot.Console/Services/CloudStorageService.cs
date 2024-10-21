@@ -5,13 +5,13 @@ using SimpleLogger;
 
 namespace MacBot.ConsoleApp.Services
 {
-    public class ObjectStorageService : IObjectStorageService
+    public class CloudStorageService : IObjectStorageService
     {
         private readonly AmazonS3Client _s3Client;
         private readonly string _bucketName = "mac-bot-cards";
         private readonly Logger _logger;
 
-        public ObjectStorageService(string accessKey, string secretKey, string serviceUrl, Logger logger)
+        public CloudStorageService(string accessKey, string secretKey, string serviceUrl, Logger logger)
         {
             var config = new AmazonS3Config
             {

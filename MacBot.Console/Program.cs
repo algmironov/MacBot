@@ -36,18 +36,18 @@ class Program
         var serviceCollection = new ServiceCollection();
 
         var storageSettings = configuration.GetSection("ObjectStorageServiceSettings");
-        var accessKey = storageSettings.GetSection("AccessKey")!.Value;
-        var secretKey = storageSettings.GetSection("SecretKey")!.Value;
-        var serviceUrl = storageSettings.GetSection("ServiceUrl")!.Value;
+        var accessKey = storageSettings.GetSection("AccessKey").Value;
+        var secretKey = storageSettings.GetSection("SecretKey").Value;
+        var serviceUrl = storageSettings.GetSection("ServiceUrl").Value;
 
         serviceCollection.AddSingleton<Logger>();
 
-        serviceCollection.AddSingleton<IObjectStorageService, ObjectStorageService>(provider =>
+        serviceCollection.AddSingleton<IObjectStorageService, CloudService>(provider =>
         {
             var settings = new ObjectStorageServiceSettings(accessKey!, secretKey!, serviceUrl!);
             var logger = provider.GetRequiredService<Logger>();
 
-            return new ObjectStorageService(settings.AccessKey, settings.SecretKey, settings.ServiceUrl, logger);
+            return new CloudService(settings, logger);
         });
 
         serviceCollection.AddDbContext<BotDbContext>();
@@ -61,7 +61,7 @@ class Program
         serviceCollection.AddTransient<ISessionParametersRepository, SessionParametersRepository>();
         serviceCollection.AddTransient<ISessionCardRepository, SessionCardRepository>();
         serviceCollection.AddTransient<IPageManager, PageManager>();
-        serviceCollection.AddTransient<IPageMessagesManager, PageMessagesManager>();
+        serviceCollection.AddSingleton<IPageMessagesManager, PageMessagesManager>();
         serviceCollection.AddTransient<IKeyboardFactory, KeyboardFactory>();
         serviceCollection.AddTransient<IUpdateHandler, CallbackUpdateHandler>();
         serviceCollection.AddTransient<IUpdateHandler, TextUpdateHandler>();
